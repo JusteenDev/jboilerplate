@@ -29,7 +29,7 @@ cd <your package name>
 npm install
 ```
 
-##Tree
+## Tree
 
 ```bash
 ├── eslint.config.mjs
