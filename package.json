@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start":"tsx src/index.ts",
+    "start": "npx eslint src/ && tsx src/index.ts",
     "test": "test"
   },
   "keywords": [
@@ -14,7 +14,6 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@eslint/js": "^9.13.0",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
     "@typescript-eslint/eslint-plugin": "^8.11.0",
@@ -22,13 +21,16 @@
     "axios": "^1.7.7",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
-    "eslint": "^9.13.0",
     "express": "^4.21.1",
-    "globals": "^15.11.0",
     "prettier": "^3.3.3",
     "tsx": "^4.19.1",
     "typescript": "^5.6.3",
-    "typescript-eslint": "^8.11.0",
     "vitest": "^2.1.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "eslint": "^9.13.0",
+    "globals": "^15.11.0",
+    "typescript-eslint": "^8.11.0"
   }
 }
