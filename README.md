@@ -31,7 +31,6 @@ cd <your package name>
 npm install
 
 //start developement
-
 npm start
 ```
 
