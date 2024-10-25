@@ -29,6 +29,10 @@ cd <your package name>
 
 //install node packages
 npm install
+
+//start developement
+
+npm start
 ```
 
 ## Tree
