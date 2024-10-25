@@ -21,7 +21,7 @@ const templatesDir = path.join(__dirname, '../templates');
 // Copy the templates to the new project directory
 fs.copy(templatesDir, projectPath)
     .then(() => {
-        console.log(`Project ${projectName} created at ${projectPath}`);
+        console.log(`Project ${projectName} Created`);
     })
     .catch(err => {
         console.error(`Error copying files: ${err}`);
