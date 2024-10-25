@@ -16,3 +16,6 @@ To install this boilerplate, simply run:
 
 ```bash
 npm i -g jboilerplate
+
+```bash
+jboiler <your package name>
