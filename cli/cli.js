@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const fs = require('fs-extra');
+const fs = require('fs-extra'); // Ensure fs-extra is installed
 const path = require('path');
 
 const projectName = process.argv[2];
@@ -11,19 +11,19 @@ if (!projectName) {
 }
 
 const projectPath = path.join(process.cwd(), projectName);
-const boilerplatePath = path.join(__dirname, '..', 'jboilerplate'); // Adjust this based on your package structure
 
 // Create the new project directory
-fs.mkdirSync(projectPath);
+fs.mkdirSync(projectPath, { recursive: true });
 
-// Copy the entire jboilerplate directory excluding cli.js
-fs.copy(boilerplatePath, projectPath, { filter: (src) => {
-    // Exclude cli.js from copying
-    return !src.endsWith('cli.js');
-}})
-.then(() => {
-    console.log(`Project ${projectName} created at ${projectPath}`);
-})
-.catch(err => {
-    console.error('Error copying files:', err);
-});
+// Get the path of the templates directory
+const templatesDir = path.join(__dirname, '../templates');
+
+// Copy the templates to the new project directory
+fs.copy(templatesDir, projectPath)
+    .then(() => {
+        console.log(`Project ${projectName} created at ${projectPath}`);
+    })
+    .catch(err => {
+        console.error(`Error copying files: ${err}`);
+        process.exit(1);
+    });

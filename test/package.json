@@ -35,6 +35,6 @@
     "typescript-eslint": "^8.11.0"
   },
   "bin": {
-    "jboiler": "./cli/cli.js"
+    "jboilerplate": "./cli/cli.js"
   }
 }
