@@ -27,3 +27,23 @@ Open your directory
 cd <your package name>
 //install node packages
 npm install
+```
+
+##Tree
+
+```bash
+├── eslint.config.mjs
+├── package-lock.json
+├── package.json
+├── src
+│   ├── handler
+│   │   └── main.handler.ts
+│   ├── index.ts
+│   ├── middleware
+│   │   └── middleware.server.ts
+│   ├── routes
+│   │   └── route.server.ts
+│   └── server
+│       └── server.ts
+└── tsconfig.json
+```
