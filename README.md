@@ -15,4 +15,4 @@
 To install this boilerplate, simply run:
 
 ```bash
-npm install jboilerplate
+npm i -g jboilerplate
