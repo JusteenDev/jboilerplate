@@ -17,3 +17,13 @@ To install this boilerplate, simply run:
 ```bash
 npm i -g jboilerplate
 jboiler <your package name>
+```
+
+## Directory
+
+Open your directory
+
+```bash
+cd <your package name>
+//install node packages
+npm install
